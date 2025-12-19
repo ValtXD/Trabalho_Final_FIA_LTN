@@ -119,3 +119,19 @@ isCone = ltn.Predicate(UnaryPredicate())
 isTriangle = ltn.Predicate(UnaryPredicate())
 isSmall = ltn.Predicate(UnaryPredicate())
 isBig = ltn.Predicate(UnaryPredicate())
+```
+---
+
+### Passo a Passo:
+
+1. **Acesse o Google Colab:**
+   - Vá para [colab.research.google.com](https://colab.research.google.com)
+
+2. **Carregue o notebook:**
+   - Faça o download do arquivo `.ipynb`
+   - Clique em "Upload" e selecione o arquivo `trabalho_3_FIA_versão1_18_Fran.ipynb`
+   - **OU** copie o link do GitHub diretamente no Colab
+
+3. **Execute todas as células:**
+   - `Runtime` → `Run all`
+   - Aguarde a instalação automática das dependências
