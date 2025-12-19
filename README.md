@@ -6,8 +6,6 @@ Este projeto implementa um sistema neuro-simbólico usando **Logic Tensor Networ
 
 ---
 
-## Equipe
-
 <span style="font-weight: bold; font-size: 16px; color: #333;">Alunos</span>
 
 <table style="border-collapse: collapse; width: 100%;">
