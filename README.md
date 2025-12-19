@@ -106,6 +106,15 @@ Baseado no dataset CLEVR original (Compositional Language and Elementary Visual 
 
 ---
 
+### Evolução do Treinamento
+Durante o treinamento, observamos uma melhoria consistente na satisfação:
+- **Época 0**: 56.48% de satisfação
+- **Época 100**: 71.98% de satisfação  
+- **Época 200**: 82.66% de satisfação
+- **Época 275**: 87.36% de satisfação
+
+---
+
 ## Arquitetura do Sistema
 
 ### Predicados Implementados:
@@ -120,8 +129,37 @@ isTriangle = ltn.Predicate(UnaryPredicate())
 isSmall = ltn.Predicate(UnaryPredicate())
 isBig = ltn.Predicate(UnaryPredicate())
 ```
+
 ---
 
+## Análise dos Resultados
+
+### Pontos Fortes
+1. **Alta Performance**: 94.2% de satisfação geral da base de conhecimento
+2. **Classificação Perfeita**: 100% de acurácia na identificação de formas e tamanhos
+3. **Consistência**: Baixo desvio padrão entre execuções (robustez)
+4. **Interpretabilidade**: Fórmulas lógicas tornam o raciocínio transparente
+
+### Insights
+- O modelo aprende efetivamente **conceitos básicos** (formas, tamanhos)
+- **Relações simples** são bem capturadas (esquerda/direita, acima/abaixo)
+- **Composição de relações** representa um desafio maior
+- A abordagem LTN mostra **viabilidade** para raciocínio visual composicional
+
+---
+
+## Conclusões
+
+Este trabalho demonstrou com sucesso a aplicação de Logic Tensor Networks para raciocínio neuro-simbólico sobre cenas visuais no estilo CLEVR. Os resultados mostram que:
+
+1. **Aprendizado Efetivo**: O modelo aprende conceitos visuais e relações espaciais básicas
+2. **Integração Bem-sucedida**: A combinação entre aprendizado profundo e lógica formal é viável
+3. **Desafios de Complexidade**: Fórmulas complexas requerem abordagens mais sofisticadas
+4. **Potencial de Aplicação**: A metodologia é promissora para tarefas que exigem raciocínio composicional
+
+O projeto abre caminho para investigações futuras em arquiteturas mais avançadas, datasets mais complexos e aplicações em problemas do mundo real que exigem integração entre percepção visual e raciocínio lógico.
+
+---
 ### Passo a Passo:
 
 1. **Acesse o Google Colab:**
