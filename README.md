@@ -37,18 +37,19 @@ Este projeto implementa um sistema neuro-simbólico usando **Logic Tensor Networ
 
 ### 1. Neuro-Simbólico (NeSy) e Logic Tensor Networks (LTN)
 
-#### Neuro-Simbólico (NeSy):
-- **Combinação** de redes neurais (aprendizado de padrões) com lógica simbólica (raciocínio formal)
-- **Redes neurais** aprendem conceitos diretamente dos dados
-- **Lógica formal** expressa conhecimento de domínio e restrições
-- **Vantagens**: Aprendizado com poucos dados, interpretabilidade, raciocínio composicional
+### Neuro-Simbólico (NeSy)
+A abordagem neuro-simbólica combina as capacidades de aprendizado das redes neurais com o poder de raciocínio da lógica simbólica. Enquanto as redes neurais aprendem padrões complexos a partir dos dados, a lógica formal permite expressar conhecimento de domínio, restrições e regras de inferência.
 
-#### Logic Tensor Networks (LTN):
-- Framework para NeSy que "tensoriza" lógica de primeira ordem
-- **Predicados** são representados como redes neurais
-- **Conectivos lógicos** (∧, ∨, ¬, →) implementados como operações fuzzy
-- **Quantificadores** (∀, ∃) como agregações sobre tensores
-- **Treinamento**: Maximiza a satisfação de fórmulas lógicas (satAgg)
+### Logic Tensor Networks (LTN)
+LTN é um framework que "tensoriza" a lógica de primeira ordem, permitindo que predicados sejam representados como redes neurais e que fórmulas lógicas sejam avaliadas de forma diferenciável. Isso possibilita o treinamento end-to-end de sistemas que aprendem tanto os conceitos quanto as regras lógicas que os relacionam.
+
+**Principais componentes:**
+- **Predicados**: Redes neurais que aprendem conceitos
+- **Conectivos lógicos**: Operações fuzzy sobre tensores
+- **Quantificadores**: Agregações sobre domínios de objetos
+- **Treinamento**: Maximização da satisfação lógica (satAgg)
+
+---
 
 ### 2. Dataset CLEVR Simplificado
 
